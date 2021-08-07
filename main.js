@@ -59,6 +59,26 @@ function my_keydown(e) {
         right();
         console.log("Right key is pressed");
     }
+
+    if (keyPressed == 87) {        
+        up();
+        console.log("W is pressed");
+    }
+
+    if (keyPressed == 65) {        
+        left();
+        console.log("A is pressed");
+    }
+
+    if (keyPressed == 83) {        
+        down();
+        console.log("S is pressed");
+    }
+
+    if (keyPressed == 68) {        
+        right();
+        console.log("D is pressed");
+    }
 }
 
 function up() {
