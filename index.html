@@ -3,7 +3,6 @@
 <head>
 <style>
 body{
-	background-image: url("mars.gif");
     background-position: center;
     background-size: cover;
 }
@@ -14,11 +13,12 @@ body{
 	border-style:ridge;
 }
 
-h1,h4
+#heading,h4
 {
 	color: white !important;
 }
-</style>		
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">		
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -26,14 +26,21 @@ h1,h4
 	<link rel="icon" href="rover.png">
 </head>
 <body onload="add()">
+	<section id="avail" style="display: none;">
 <center>
-<h1>Moving Rover On Mars</h1>
+<h1 id="heading">Moving Rover On Mars</h1>
 <canvas id="myCanvas" height="600" width="800"></canvas>
 <h4>
 	<b class="text-danger">NOTE : </b> IF ROVER IS NOT VISIABLE PRESS ANY ARROW KEY
 </h4>
 
 </center>
+</section>
+<section id="nan" style="display: none;">
+<center>
+	<h1>You cannot open this website as you need a keyboard</h1>
+</center>
+</section>
 <script src="main.js"></script>
 </body>
 </html>

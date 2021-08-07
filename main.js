@@ -4,11 +4,17 @@ var ctx = canvas.getContext("2d");
 var rover_width = 100;
 var rover_height = 90;
 
-var background_image = "mars.jpg";
 var rover_image = "rover.png";
 
 var rover_x = 10;
 var rover_y = 10;
+
+var background_images_array = ["mars.jpg", "mars2.jpeg", "mars3.jpeg", "mars4.jpeg", "mars5.jpeg"];
+
+var random_number = Math.floor(Math.random() * 5);
+var background_image = background_images_array[random_number];
+console.log("background image = " + background_image);
+
 
 function add() {
     background_img = new Image();
@@ -89,4 +95,13 @@ function right() {
         uploadbg();
         uploadrover();
     }
+}
+
+//Bootstrap
+
+if(screen.width < 992) {
+    document.getElementById("nan").style.display = "block";
+} else {
+    document.getElementById("avail").style.display = "block";
+    document.body.style.backgroundImage = 'url("mars.gif")';
 }
